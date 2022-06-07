@@ -6,26 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        th{
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr.neguin{
             background-color: gray;
             color: white;
+            text-transform:bold;
+            padding: 25px;
         }
+        td{
+            border:1px solid black;
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
     <table>
-        <th>
-            <tr>
-                <td rowspan="2">área</td>
-                <td rowspan="2">Disciplinas</td>
-                <td>notas</td>
-                <td rowspan="2">médias</td>
-            </tr>
-            <tr>
-                <td>nota 1</td>
-                <td>nota 2</td>
-            </tr>
-        </th>
+       
+         <tr class="neguin">
+                <td rowspan="2"><b>área</b></td>
+                <td rowspan="2"><b>Disciplinas</b></td>
+                <td colspan="2"><b>notas</b></td>
+                <td rowspan="2"><b>médias</b></td>
+        </tr>
+        <tr class="neguin">
+                <td><b>nota 1</b></td>
+                <td><b>nota 2</b></td>
+        </tr>
+        
         <tr>
             <td rowspan="4">exatas</td>
             <td>Matemática</td>
@@ -49,6 +62,27 @@
             <td>biologia</td>
             <td>0.0</td>
             <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr  class="neguin">
+            <td colspan="4" style="text-align:left ;"><b>Média de exatas</b></td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Humanas</td>
+            <td>Historia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+         </tr>
+         <tr>
+             <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+         </tr>
+         <tr class="neguin">
+            <td colspan="4" style="text-align:left ;"><b>Média de humanas</b></td>
             <td>0.0</td>
         </tr>
     </table>
